@@ -1,0 +1,523 @@
+// 轮播图
+.wk-imgplay__box {
+  width: 100%;
+  height: 165px;
+  .van-swipe-item {
+    img{
+      width: 100%;
+      height: 165px;
+    }
+  }
+}
+
+// 头像
+.wk-avatars-box {
+  background-position: center center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+// 证书类型
+.wk-input__components {
+  padding-top: 44px;
+}
+
+.van-list {
+  .van-cell{
+    // margin-bottom: 1px;
+    // border-bottom: 1px solid #eee;
+    &:after{
+      // display: none;
+    }
+    &:last-child{
+      // border-bottom: none;
+    }
+  }
+}
+
+.wk-button-group{
+  // padding: 15px;
+}
+.wk-button-group20{
+  padding: 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+  background-color: #fff;
+  .van-col{
+    padding: 0 5px;
+  }
+}
+
+// 公共快捷菜单组件
+.wk-convenient__menu{
+  // margin-top: 20px;
+  // padding: 38px 42px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  height: 108px;
+  background-color: #fff;
+  .van-tabbar{
+    border: none;
+    justify-content: space-between;
+    .van-tabbar-item{
+      width: 52px;
+      height: 70px;
+      .van-tabbar-item__icon{
+        margin-bottom: 10px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 18px;
+        background-size: 45px 45px;
+      }
+      .van-tabbar-item__text{
+        height: 15px;
+        font-size: 13px;
+      }
+    }
+    .van-tabbar-item.job001{
+      .van-tabbar-item__icon{
+        background-image: url('https://sihong-wk.oss-cn-shanghai.aliyuncs.com/assets/img/menu/job001.png');
+      }
+    }
+    .van-tabbar-item.job002{
+      .van-tabbar-item__icon{
+        background-image: url('https://sihong-wk.oss-cn-shanghai.aliyuncs.com/assets/img/menu/job002.png');
+      }
+    }
+    .van-tabbar-item.job003{
+      .van-tabbar-item__icon{
+        background-image: url('https://sihong-wk.oss-cn-shanghai.aliyuncs.com/assets/img/menu/job003.png');
+      }
+    }
+    .van-tabbar-item.job004{
+      .van-tabbar-item__icon{
+        background-image: url('https://sihong-wk.oss-cn-shanghai.aliyuncs.com/assets/img/menu/job004.png');
+      }
+    }
+    .van-tabbar-item.human001{
+      .van-tabbar-item__icon{
+        background-image: url('https://sihong-wk.oss-cn-shanghai.aliyuncs.com/assets/img/menu/human001.png');
+      }
+    }
+    .van-tabbar-item.human002{
+      .van-tabbar-item__icon{
+        background-image: url('https://sihong-wk.oss-cn-shanghai.aliyuncs.com/assets/img/menu/human002.png');
+      }
+    }
+    .van-tabbar-item.human003{
+      .van-tabbar-item__icon{
+        background-image: url('https://sihong-wk.oss-cn-shanghai.aliyuncs.com/assets/img/menu/human003.png');
+      }
+    }
+    .van-tabbar-item.human004{
+      .van-tabbar-item__icon{
+        background-image: url('https://sihong-wk.oss-cn-shanghai.aliyuncs.com/assets/img/menu/human004.png');
+      }
+    }
+  }
+  .van-hairline--top-bottom::after{
+    border-width: 0;
+  }
+}
+
+// 页面加载中样式
+.wk-page-loading {
+  width: 100%;
+  // height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  &>.van-loading {
+    margin: 20% auto;
+  }
+  &>.wk-page-null {
+    margin: 20% auto 15px;
+    font-size: 16px;
+    text-align: center;
+    &>img {
+      margin: 15px auto;
+      display: block;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+.wk-page-loading.hide {
+  display: none;
+}
+
+// 列表标题
+.wk-list__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #fff;
+  // border-bottom: 1px solid #dedede;
+  &>h1 {
+    margin: 0;
+    position: relative;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #333;
+    height: 45px;
+    line-height: 45px;
+    &:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 14.5px;
+      width: 3px;
+      height: 16px;
+      background-color: #2CC17B;
+    }
+  }
+  &>a{
+    font-size: 13px;
+    color: #909399;
+    i{
+      font-size: 12px;
+    }
+  }
+}
+.wk-list__page {
+  padding-top: 44px;
+  height: 100%;
+  .van-tabs__content{
+    height: 100%;
+    .van-tab__pane{
+      height: 100%;
+      .van-pull-refresh{
+        height: 100%;
+      }
+    }
+  }
+  .van-tabs__wrap{
+    height: 44px;
+    .van-tab {
+      font-size: 16px;
+      line-height: 44px;
+    }
+  }
+}
+
+.wk-list__box {
+  width: 100%;
+  // height: 100%;
+}
+// 列表页
+.wk-list__item {
+  padding: 11px 0;
+  // height: 136px;
+  &>h2, &>h3{
+    margin: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    min-height: 20px;
+    line-height: 20px;
+    &>span {
+      flex: 3;
+      text-align: right;
+      &:first-child {
+        flex: 6;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+  &>h3 {
+    font-weight: normal;
+    font-size: 14px;
+    min-height: 18px;
+    line-height: 18px;
+  }
+  &>p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    &>span {
+      flex: 3;
+      text-align: right;
+      &:first-child {
+        flex: 6;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+// 详情页面
+.wk-detail__page{
+  background-color: #f5f5f5;
+  .wk-detail__box{
+    height: 100%;
+    width: 100%;
+  }
+  .wk-detail__head{
+    padding: 12px;
+    // height: 180px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    h1 {
+      margin: 0;
+      margin-bottom: 9px;
+      display: flex;
+      min-height: 20px;
+      line-height: 20px;
+      // line-height: 17px;
+      font-size: 18px;
+      font-weight: 600;
+      justify-content: space-between;
+      font-weight: normal;
+      .fz26{
+        font-size: 13px;
+      }
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 9px;
+      height: 17px;
+      line-height: 17px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    p{
+      height: 14px;
+      line-height: 14px;
+      font-size: 16px;
+      span{
+        font-size: 13px;
+      }
+    }
+    .company-info__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1{
+        margin-top: 0;
+      }
+      p{
+        height: 14px;
+        line-height: 14px;
+        font-size: 13px;
+      }
+      .van-icon{
+        color: #999;
+        font-size: 16px;
+      }
+    }
+  }
+  .wk-detail__body{
+    position: relative;
+    // margin-bottom: 10px;
+    padding: 15px;
+    background-color: #fff;
+    .wk-title, .wk-title2 {
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 10px;
+      height: 18px;
+      line-height: 18px;
+      font-size: 16px;
+      font-weight: 600;
+      // background-color: #ddd;
+      &:after{
+        content: ' ';
+        position: absolute;
+        left: 0;
+        width: 3px;
+        height: 16px;
+        background-color: #2CC17B;
+      }
+    }
+    .wk-title2 {
+      left: 0;
+      // width: 100%;
+      height: 44px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 30px;
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-bottom: 15px;
+      background-color: #F7F9FC;
+      &::after{
+        left: 15px;
+      }
+    }
+    .wk-detail__row{
+      position: relative;
+      padding-left: 70px;
+      font-size: 14px;
+      min-height: 28px;
+      &>.tt{
+        position: absolute;
+        left: 0;
+        width: 70px;
+        height: 28px;
+        line-height: 28px;
+        font-weight: 600;
+      }
+      &>.cts{
+        width: 100%;
+        line-height: 28px;
+        text-align: justify;
+      }
+    }
+    .wk-detail__item {
+      margin-top: 8px;
+      padding-bottom: 6px;
+      position: relative;
+      &:not(:last-child)::after {
+        content: ' ';
+        position: absolute;
+        pointer-events: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5);
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+  .wk-detail__item {
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .wk-detail__foot{
+    padding: 15px;
+    background-color: #fff;
+    .van-button{
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      border-radius: 6px;
+    }
+  }
+}
+
+// 搜索框
+.wk-search__box {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f8f8f8;
+}
+
+// 表单页面
+.resume-edit{
+  height: auto;
+  .van-cell__value {
+    flex: 3;
+  }
+  // .has-bottom-btns {
+  // }
+}
+
+// 过滤器
+$filterHeight: 38px;
+.wk-filter__components {
+  position: relative;
+  height: $filterHeight;
+  // height: 100%;
+  z-index: 10;
+  &:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  .wk-filter__head{
+    padding: 9px 0;
+    height: $filterHeight;
+    display: flex;
+    justify-content: space-between;
+    .wk-filter__head-item{
+      position: relative;
+      font-size: 12px;
+      text-align: center;
+      line-height: 20px;
+      width: 100%;
+      color: #999;
+      border-right: 1px solid #eee;
+      &:last-child{
+        border-right: none;
+      }
+      &:after {
+        position: relative;
+        top: 50%;
+        content: ' ';
+        border-radius: 2px;
+        border: 5px solid #bcbcbc;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+    .wk-filter__head-item.text-link{
+      color: #13b9f7;
+      &:after{
+        border-color: #13b9f7;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+  }
+  .wk-filter__body{
+    // padding: 0 0 2px;
+    // position: absolute;
+    width: 100%;
+    // height: 100%;
+    min-height: 10px;
+    top: $filterHeight;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    .van-cell.selected {
+      color: #13b9f7;
+    }
+  }
+}
+
+.customer-null {
+  padding: 25px 10px 10px;
+  text-align: center;
+  color: #ff3860;
+}
+.customer-add-btns {
+  padding: 15px;
+  text-align: center;
+  .van-button{
+    width: 180px;
+    height: 40px;
+    border: none;
+    line-height: 40px;
+  }
+}

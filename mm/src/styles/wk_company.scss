@@ -1,0 +1,25 @@
+.wk-detail__page-company {
+  .wk-detail__head {
+    h1 {
+      margin: 0;
+      font-size: 16px;
+      height: auto;
+      min-height: 32px;
+      line-height: 28px;
+    }
+    p {
+      position: relative;
+      height: auto;
+      font-size: 14px;
+      min-height: 24px;
+      line-height: 24px;
+      .van-icon {
+        position: relative;
+        top: 2px;
+        height: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
